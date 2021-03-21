@@ -1,0 +1,269 @@
+/*brand
+yellow: #f1e209;
+black: #131313;*/
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: 'Stick', sans-serif;
+	background:#eee;
+}
+header
+{
+	background: #131313;
+	padding: 10px;
+	/*position: sticky;
+	top: 0;
+	left: 0;*/
+}
+.logo
+{
+	float: left;
+}
+.header-right
+{
+	float: right;
+}
+.clearfix
+{
+	clear: both;
+}
+.topnav
+{
+	text-align: right;
+	padding-top: 20px;
+}
+.topnav a
+{
+	color: #fff;
+	text-decoration: none;
+	padding-right: 20px;
+}
+.topnav a:hover
+{
+color: #f1e209;
+}
+.search input[type=search]
+{
+	width: 335px;
+	height: 40px;
+	border: 0;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+.search button
+{
+	width: 80px;
+	height: 40px;
+	border: 0;
+	background: #f1e209;
+	border-radius: 10px 10px 10px 10px;
+}
+.search
+{
+	margin-top: 15px;
+	margin-right: 50px;
+}
+
+
+.shortcut-option ul li
+{
+	display: inline;
+	padding: 20px;
+}
+.shortcut-option ul li:hover
+{
+	color: #f1e209;
+}
+.shortcut-option
+{
+	text-align: center;
+	margin: 10px;	
+}
+.shortcut-option ul a
+{
+	text-decoration: none;
+	color: #131313;
+}
+/*slider part*/
+.carousel-indicators li 
+{
+	width: 15px;
+	height: 0px;
+	background: #f1e209;
+	border-radius: 50%;
+}
+.owl-nav
+{
+/*	margin-top: -15px;*/
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	color: #b2b2b2;
+	font-weight: bold;
+	font-size: 25px;
+}
+/*.carousel-item h1
+{
+	font-weight: 600;
+	color: yellow;
+	max-width: 100%;
+}*/
+.recommend img:hover
+{
+	transform: scale(0.9);
+}
+/*items part*/
+.items-new
+{
+	width: 200px;
+	background: #6db9ac;
+	text-align: center;
+	margin-right: 20px;
+	padding-bottom: 10px;
+}
+.items-new:hover
+{
+	transform: scale(1.05);
+/*	box-shadow: 0 0 25px 0 rgba(241 226 9);*/
+}
+/*.items-new img:hover 
+{
+	background: rgba(255, 0, 0, 0.2);
+}*/
+.items-new p
+{
+	padding-top: 5px;
+	line-height: 10px;
+	padding-bottom: 5px;
+}
+.items-new button
+{
+	border: 0;
+	padding: 2px;
+	border-radius: 5px;
+	background: #f1e209;
+}
+.items-new button:hover
+{
+	background: #f1e209;
+}
+.shop-more
+{
+	text-align: right;
+	margin-right:50px;
+	margin-top: 20px;
+}
+.shop-more button
+{
+	border: 0px;
+	background: #f1e209;
+	padding: 2px;
+	border-radius: 5px;
+}
+.shop-more:hover button
+{
+	background: #000;
+	color: #fff;
+}
+/*.items-list
+{
+	max-width: 1800px;
+}*/
+
+.hot-product
+{
+	position: relative;
+}
+
+
+.owl-carousel .owl-nav button.owl-prev
+{
+	position: absolute;
+	top: 100px;
+	left: -6px;
+	color: #f1e209;
+	font-size: 25px;
+	width: 35px;
+	background: black;
+	border-radius: 50%;
+}
+.owl-carousel .owl-nav button.owl-next
+{
+	position: absolute;
+	top: 100px;
+	right: -6px;
+	color: #f1e209;
+	font-size: 25px;
+	width: 35px;
+	background: black;
+	border-radius: 50%;
+}
+/*SPONSER*/
+.sponser
+{
+	background: #f10e34;
+	text-align: center;
+}
+.sponser ul
+{
+	list-style: none;
+
+}
+.sponser ul li
+{
+	display: inline-block;
+	padding: 30px;
+}
+/*SPONSER*/
+/*FOOTER*/
+.contact-method
+{
+	background: black;
+}
+.contact-method ul
+{
+	list-style: none;
+	font-size: 20px;
+	color: #f1e209;
+}
+.contact-method ul li:hover
+{
+	color: #f10e34;
+}
+.contact-method h5
+{
+ color: #fff;
+ font-weight: bold;
+}
+.contact-method .icon ul li
+{
+	display: inline-block;
+	padding-right: 20px;
+	font-size: 30px;
+}
+/*FOOTER*/
+
+@media(max-width: 360px)
+{
+	.search input[type=search]{max-width: 225px;}
+	.hot-product .product-1 h5{font-size: 15px;}
+	.ads .product-1 h5{font-size: 15px;}
+	 p {font-size: 5px;}
+	.items-list .box .items-new{padding-right: 50px; max-width: 100px; line-height: 50px;}
+	.items-list .box .items-new .rating,.items-list .box .items-new button{display: none;}
+	.items-list .box .items-new p{line-height: -50px;}
+	.owl-carousel .owl-nav button.owl-prev,.owl-carousel .owl-nav button.owl-next{color: #f1e209;font-size: 15px;width: 35px;height: 30px;background: red;border-radius: 50%;}
+	
+	.logo{float: none;}
+}
+.contact-method .row
+{
+margin-right: 0px; 
+margin-left: 0px;
+}
